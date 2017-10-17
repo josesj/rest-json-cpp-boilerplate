@@ -22,7 +22,7 @@ include_directories( SYSTEM ${restbed_INCLUDE} ${jsoncpp_INCLUDE}
                             ${spdlog_INCLUDE_DIRS} )
 
 # Source files                      
-add_executable( ${PROJECT_NAME} src/nccdctrl.cpp src/nccdctrl.h )
+add_executable( ${PROJECT_NAME} src/cpp-rest.cpp )
 
 # Dependencies to be builded before main executable
 add_dependencies( ${PROJECT_NAME} restbed jsoncpp )
@@ -30,8 +30,6 @@ add_dependencies( ${PROJECT_NAME} restbed jsoncpp )
 # Linker
 link_libraries( ${restbed_LIBRARY} ${jsoncpp_LIBRARIES} )
 target_link_libraries( ${PROJECT_NAME} ${restbed_LIBRARY} ${jsoncpp_LIBRARY} )
-
-file( COPY config DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/distribution/" )
 
 # Add the install targets
 install ( TARGETS ${PROJECT_NAME} 
