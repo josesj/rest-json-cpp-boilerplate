@@ -1,0 +1,9 @@
+[submodule "dependency/restbed"]
+	path = dependency/restbed
+	url = https://github.com/Corvusoft/restbed.git
+[submodule "dependency/jsoncpp"]
+	path = dependency/jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
+[submodule "dependency/spdlog"]
+	path = dependency/spdlog
+	url = https://github.com/gabime/spdlog.git

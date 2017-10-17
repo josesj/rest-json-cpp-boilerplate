@@ -1,25 +1,12 @@
-New CCD Controller for LRS
-===
-
-Requirements
------
-- uuid / uuid-dev
-- pThreads
-- CFitsIO
-- JsonCpp**
-- RestBed**
-- Spdlog**
-
-** Provided by git submodules 
+# rest-json-cpp-boilerplate
 
 Build
 -----
 
 ```
-git clone --recursive git@gitlab.tng.iac.es:lrs/nCcdCtrl.git
+git clone --recursive git@github.com:josesj/rest-json-cpp-boilerplate.git 
 mkdir nCcdCtrl/build
 cd nCcdCtrl/build
 cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ..
 make 
 ```
-# rest-json-cpp-boilerplate
