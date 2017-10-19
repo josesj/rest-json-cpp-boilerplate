@@ -9,7 +9,8 @@ set( cpp-rest_VERSION_MINOR 2017.1 )
 set( cpp-rest_VERSION ${cpp-rest_VERSION_MAJOR}.${cpp-rest_VERSION_MINOR} )
 set( PACKAGE_VERSION ${cpp-rest_VERSION} )
 set( VERSION "${cpp-rest_VERSION}" )
-set ( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/distribution/bin )
+set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/distribution/bin )
+set( BUILD_STATIC_LIBS YES)
 
 # Project cmake modules
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/modules" )

@@ -10,7 +10,7 @@ if ( restbed_SOURCE )
             PREFIX restbed_build
             INSTALL_DIR ${restbed_DISTRIBUTION}
             CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${restbed_DISTRIBUTION}
-            -DBUILD_SSL=${BUILD_SSL} -DBUILD_SHARED=YES
+            -DBUILD_SSL=${BUILD_SSL} -DBUILD_SHARED=${BUILD_SHARED_LIBS}
             -DCMAKE_INSTALL_LIBDIR=lib )
 
     set( restbed_INCLUDE "${restbed_SOURCE}/source" )
